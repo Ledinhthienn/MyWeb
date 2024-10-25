@@ -1,0 +1,214 @@
+.orderListContainer {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+th, td {
+  border: 1px solid #ddd; /* Add border to table cells */
+  padding: 10px;
+  text-align: center;
+}
+.tableRow {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tableCell {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.tableCellImage img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.detailHeader {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  background: linear-gradient(90deg, #FF5733, #FF8D1A, #FFC300, #4CAF50, #007BFF, #8A2BE2); /* Red, orange, yellow, green, blue, purple */
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  animation: gradientAnimation 1s linear infinite;
+  transition: transform 0.3s ease;
+}
+.detailHeader:hover {
+  transform: scale(1.05);
+}
+
+.statusApproved {
+  background-color: #6ecd71;
+  color: #ffffff;
+}
+
+.statusPending {
+  background-color: #FFCC33;
+  color: #ffffff;
+}
+
+.statusCanceled {
+  background-color: #F44336;
+  color: #ffffff;
+}
+.orderdetail {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  background: linear-gradient(90deg, #FF5733, #FF8D1A, #FFC300, #4CAF50, #007BFF, #8A2BE2); /* Red, orange, yellow, green, blue, purple */
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  animation: gradientAnimation 1s linear infinite;
+  transition: transform 0.3s ease;
+}
+.orderdetail:hover {
+  transform: scale(1.05);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  max-height: 80vh; /* Set a maximum height */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  position: relative; /* To position the close button inside */
+}
+.modalContent button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.modalContent button:hover {
+  background-color: #d32f2f;
+} 
+  
+  .statusApproved {
+    background-color: #6ecd71; /* Green for APPROVED */
+    color: #ffffff;
+  }
+  
+  .statusPending {
+    background-color: #FFCC33; /* Yellow for PENDING */
+    color: #ffffff;
+  }
+  
+  .statusCanceled {
+    background-color: #F44336; /* Red for CANCELED */
+    color: #ffffff;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  tr:first-child.datatable {
+    background-color: #ffeeaa;
+  }
+  
+  tr:not(:first-child):nth-child(even).datatable {
+    background-color: #f5f5f5;
+  }
+  
+  tr:not(:first-child):nth-child(odd).datatable {
+    background-color: #ffeeaa;
+  }
+  
+  tr:not(:first-child):hover.datatable {
+    background-color: #dcfcfc;
+    cursor: pointer;
+  }
+  .tabContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa; /* Lighter background for tabs */
+    padding: 10px;
+    border-radius: 8px; /* Softly rounded edges for the entire tab section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+  }
+  
+  .tabItem {
+    position: relative;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500; /* Slightly bolder font */
+    color: #333; /* Neutral dark color */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tabItem::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #ff6347; /* Color for underline (tomato) */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .tabItem.active::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  .tabItem.active {
+    color: #ff6347; /* Change text color for active item */
+    font-size: 18px; /* Slight increase in size for emphasis */
+    font-weight: bold;
+  }
+  
+  .tabItem:hover {
+    color: #007bff; /* Blue color on hover */
+    font-weight: bold;
+  }
+  
+  .tabItem:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  

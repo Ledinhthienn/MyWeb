@@ -1,0 +1,216 @@
+/* datatable.css */
+/* mycart */
+/* css Item list */ 
+.text-rainbow {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-text-animation 5s linear infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: #ff5733; } /* Reddish color */
+    50% { color: #33ff57; } /* Greenish color */
+    100% { color: #5733ff; } /* Purplish color */
+  }
+  
+  .datatable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+  }
+  
+  .datatable th, .datatable td {
+    border: 2px solid #444;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .datatable th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 14px;
+  }
+  
+  .datatable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .datatable tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .datatable tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .datatable tr:first-child:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: default;
+  }
+  
+  .datatable th, .datatable td {
+    transition: all 0.3s ease;
+  }
+
+  /* hiệu ứng checkout , delete */
+  .link-checkout {
+    color: #007bff; /* Màu chữ cho phần tử CHECKOUT */
+    cursor: pointer;
+    text-decoration: none; /* Không có gạch chân mặc định */
+    position: relative; /* Cần thiết cho pseudo-element */
+  }
+  
+  .link-checkout:hover {
+    color: rgb(30, 0, 255); /* Màu chữ khi hover */
+  }
+  
+  .link-checkout::after {
+    content: ''; /* Tạo pseudo-element */
+    display:block; /* Tạo không gian cho gạch chân */
+    height: 3px; /* Độ dày gạch chân */
+    background: rgb(30, 0, 255); /* Màu gạch chân */
+    width: 0; /* Chiều rộng ban đầu là 0 */
+    transition: width 0.3s ease; /* Hiệu ứng chuyển động */
+    position: absolute; /* Đặt gạch chân dưới chữ */
+    bottom: -5px; /* Khoảng cách từ chữ tới gạch chân */
+    left: 0; /* Căn trái */
+  }
+  
+  .link-checkout:hover::after {
+    width: 100%; /* Mở rộng gạch chân khi hover */
+  }
+  
+  span.link {
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    text-decoration: none; /* Không có gạch chân mặc định */
+    position: relative; /* Cần thiết cho pseudo-element */
+  }
+  
+  span.link:hover {
+    color: rgb(220, 3, 3);
+  }
+  
+  span.link::after {
+    content: ''; /* Tạo pseudo-element */
+    display: block; /* Tạo không gian cho gạch chân */
+    height: 3px; /* Độ dày gạch chân */
+    background: rgb(220, 3, 3); /* Màu gạch chân */
+    width: 0; /* Chiều rộng ban đầu là 0 */
+    transition: width 0.3s ease; /* Hiệu ứng chuyển động */
+    position: absolute; /* Đặt gạch chân dưới chữ */
+    bottom: -5px; /* Khoảng cách từ chữ tới gạch chân */
+    left: 0; /* Căn trái */
+  }
+  
+  span.link:hover::after {
+    width: 100%; /* Mở rộng gạch chân khi hover */
+  }
+
+  /* Add this in Mycart.css */
+/* Add this in Mycart.css */
+.success-message {
+  background-color: #f0fff4;
+  color: #155724;
+  padding: 30px;
+  margin: 30px 0;
+  border: 2px solid #c3e6cb;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.success-message .success-icon {
+  font-size: 60px;
+  color: #28a745;
+}
+
+.success-message h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #1d2124;
+}
+
+.success-message p {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.success-message .order-id {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.success-message button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.success-message button:hover {
+  background-color: #0056b3;
+}
+
+.success-message ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.success-message li {
+  background-color: #e9f5ee;
+  border: 2px solid #c3e6cb;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-message li img {
+  max-width: 100px; /* Increased size of image */
+  max-height: 100px; /* Adjust height as well */
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #c3e6cb;
+}
+
+.success-message li div {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.success-message li p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.chitiet {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.chitiet a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.chitiet a:hover {
+  text-decoration: underline;
+}

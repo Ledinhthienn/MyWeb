@@ -1,0 +1,55 @@
+/* order */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -250px; 
+  
+  }
+  
+  .align-center {
+    width: fit-content;
+    margin: 0 auto;
+  
+  }
+  .approved {
+    background-color: #6ecd71; /* Green for APPROVED */
+    color: #040404;
+  }
+  
+  .canceled {
+    background-color: #F44336; /* Red for CANCELED */
+    color: #040404;
+  }
+  .pending {
+    background-color: #FFCC33; /* Yellow for PENDING */
+    color: #040404;
+  }
+
+  .approved-button {
+    color: white;
+    background-color: rgb(76, 249, 76);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .canceled-button {
+    color: white;
+    background-color: rgb(248, 100, 100);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .approved-button:hover {
+    background-color: darkgreen; /* Màu nền khi hover */
+    opacity: 0.8; /* Độ mờ khi hover */
+  }
+  
+  .canceled-button:hover {
+    background-color: darkred; /* Màu nền khi hover */
+    opacity: 0.8; /* Độ mờ khi hover */
+  }

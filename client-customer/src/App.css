@@ -1,0 +1,138 @@
+/* styles.css */
+.body-customer {
+  width: 1300px;
+  height: fit-content;
+  margin: 0px auto;
+  position: relative;
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 5px auto;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+/* menu.css */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+.text-center-itemlist{
+  font-size: 36px;
+  text-align: center ;
+}
+ul.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.menu {
+  margin: 0 0px;
+  text-transform: uppercase;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 350px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+  color: black;
+  cursor: pointer;
+  padding: 15px 50px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+#backToTopBtn img {
+  width: 50px; /* Kích thước tương tự với các nút khác */
+  height: 50px;
+  margin-right: 0;
+  transition: transform 0.3s ease;
+}
+
+#backToTopBtn:hover img {
+  transform: scale(1.2); /* Phóng to ảnh khi hover */
+}
+
+
+/* gạch ngang trang chủ */
+.border-bottom {
+  border-bottom: 2px solid rgb(171, 169, 169);
+  padding: 10px 0px 10px 0px;
+}
+
+
+@keyframes move-dash {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  border-radius: 15px; 
+}
+

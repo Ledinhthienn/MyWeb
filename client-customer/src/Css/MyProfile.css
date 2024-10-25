@@ -1,0 +1,206 @@
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keep it behind everything */
+}
+
+.body-profile {
+  width: 86vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+/* Add more styles as needed */
+/* Container chính */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(245, 245, 245, 0.5); /* More transparent */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề form */
+.form-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+  background: linear-gradient(90deg, #FF5733, #FF8D1A, #FFC300, #4CAF50, #007BFF, #8A2BE2); /* Red, orange, yellow, green, blue, purple */
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  animation: gradientAnimation 1s linear infinite;
+  transition: transform 0.3s ease;
+}
+.form-title:hover {
+  transform: scale(1.05);
+}
+
+/* Form Group - Inputs với biểu tượng */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  font-size:18px;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-icon svg {
+  margin-right: 10px;
+  color: #999;
+}
+.no-change {
+  cursor: not-allowed;
+  opacity: 0.6; /* Giảm độ trong suốt để báo hiệu không hoạt động */
+}
+.input-icon input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.input-icon input::placeholder {
+  color: #bbb;
+}
+
+/* Hiệu ứng khi input được focus */
+.input-icon:hover {
+  border-color: #007bff;
+}
+
+.input-icon input:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Phone Input Section */
+.phone-input {
+  display: flex;
+  gap: 5px;
+}
+
+.phone-input select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+
+/* Styling cho nút "Update" */
+.submit-button {
+  width: 60%; /* Reduce the width */
+  padding: 10px; /* Adjust padding to make the button smaller */
+  background-color: rgba(0, 184, 148, 0.7); /* Dim the button by using opacity */
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px; /* Reduce font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 15px auto 0; /* Center the button and add top margin */
+  display: block; /* Ensure it's a block element */
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: rgba(0, 168, 132, 0.7); /* Change hover state to a dimmed version */
+  transform: scale(1.05);
+}
+
+/* Nút "Back to Home" */
+.back-button {
+  width: 60%; 
+  padding: 10px; 
+  background-color: rgba(225, 112, 85, 0.7); 
+  border: none;
+  border-radius: 10px;
+  color: #2d3436;
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px auto;
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Space between the hands and text */
+  text-align: center;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hand {
+  font-size: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Smooth transition for hand movement */
+}
+
+.left-hand {
+  transform: translateX(-20px); /* Move left hand slightly to the left */
+}
+
+.right-hand {
+  transform: translateX(20px); /* Move right hand slightly to the right */
+}
+
+.back-button:hover .left-hand {
+  transform: translateX(0); /* Move left hand towards the text on hover */
+}
+
+.back-button:hover .right-hand {
+  transform: translateX(0); /* Move right hand towards the text on hover */
+}
+
+.back-button:hover {
+  background-color: rgba(225, 112, 85, 0.9); /* Slightly darker background on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+
+/* Toggle password visibility */
+.toggle-password {
+  margin-left: auto;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+  color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .form-row {
+      flex-direction: column;
+  }
+}

@@ -1,0 +1,136 @@
+.menu-container {
+  width: 250px;
+  position: fixed; /* Fixed position to keep the menu always visible */
+  top: 0;
+  left: 0;
+  height: 100%; /* Full height of the viewport */
+  background-color: #3706a0;
+  border-right: 2px solid #f0f0f0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  border-radius: 10px 0 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-container:hover {
+  transform: translateX(10px);
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.menu-left {
+  flex-grow: 1;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 15px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #5b5bff;
+  transform: translateX(5px);
+}
+
+.menu-item a:hover {
+  color: #f0f0f0;
+}
+
+.menu-right {
+  padding: 50px 20px;
+  border-top: 5px solid #f0f0f0;
+  text-align: center;
+}
+
+@keyframes textSlide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.admin-greeting {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff006e, #ffbe0b);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.admin-greeting .text {
+  animation: textSlide 2s infinite;
+}
+
+.admin-greeting .icon {
+  font-size: 24px;
+  animation: wave 1s infinite;
+}
+
+
+.logout-link {
+  text-decoration: none;
+  color: #ffeb3b;
+  font-weight: bold;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-link:hover {
+  background-color: #ffeb3b;
+  color: #000;
+}

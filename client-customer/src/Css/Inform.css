@@ -1,0 +1,136 @@
+.styled-link {
+  color: #090909;
+  font-weight: bold;
+  font-size: 18.5px;
+  text-decoration: none;
+  padding: 8px 7px;
+  border-radius:10px;
+  position: relative; /* Required for positioning the pseudo-element */
+  transition: background 0.3s ease, color 0.3s ease;
+  margin: 0 5px;
+}
+
+.styled-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.styled-link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.styled-link:hover {
+  background-color: #dd5d5d; /* Background color on hover */
+  color: white;
+}
+
+
+/* phóng to nhỏ icon  */
+.link-icon {
+  margin-right: 5px;
+  transition: transform 0.3s ease; /* Hiệu ứng transform */
+}
+
+.cart-item-count {
+  color: red;
+}
+.login-link:hover .link-icon,
+.signup-link:hover .link-icon,
+.active-link:hover .link-icon,
+.logout-link:hover .link-icon,
+.profile-link:hover .link-icon,
+.orders-link:hover .link-icon,
+.cart-link:hover .link-icon {
+  transform: scale(1.2); /* Phóng to nhỏ icon khi hover */
+}
+.cart-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0 5px;
+    background-color: #FFCC00  ; /* Màu nền vàng nhạt */
+    color: #000000; /* Màu chữ */
+  }
+  
+  .cart-link:hover {
+    background-color: #ffee99; /* Màu nền khi hover */
+    color: #000000; /* Màu chữ khi hover */
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+/* Hi */
+.greeting {
+    font-weight: bold;
+  }
+
+/* tên khách hàng */
+.ten-khach-hang {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    animation: textEffect 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes textEffect {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+/* Mời gọi mọi người đăng nhập */
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-content {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 105%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .tooltip-image {
+    width: 40px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
+  
+  .tooltip-container:hover .tooltip-content {
+    visibility: visible;
+  }
+  
+  

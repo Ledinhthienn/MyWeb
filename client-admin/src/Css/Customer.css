@@ -1,0 +1,44 @@
+/* CSS */
+.link-email {
+    color: white;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    padding: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .link-email:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    box-shadow: 0px 4px 15px rgba(0, 114, 255, 0.5);
+  }
+  
+  .link-deactive {
+    color: white;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    padding: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .link-deactive:hover {
+    background: linear-gradient(90deg, #ffc371, #ff5f6d);
+    box-shadow: 0px 4px 15px rgba(255, 95, 109, 0.5);
+  }
+/* Customer.css */
+.status-approved {
+  background-color: #6ecd71; /* Green for APPROVED */
+  color: #040404;
+}
+
+.status-canceled {
+  background-color: #F44336; /* Red for CANCELED */
+  color: #040404;
+}
+.status-pending {
+  background-color: #FFCC33; /* Yellow for PENDING */
+  color: #040404;
+}
+
+
