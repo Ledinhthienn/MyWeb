@@ -632,13 +632,13 @@ class Home extends Component {
 </div>
 <div class="bottom-info">
   <p>Công Ty TNHH Công Nghệ TechZone - 77 Trần Quang Khải, P. Tân Định, Quận 1, TP. Hồ Chí Minh. Mã số doanh nghiệp: 0312193244, nơi cấp: Sở kế hoạch và đầu tư thành phố Hồ Chí Minh</p>
-  <p>MST: 0312732474. Chủ sở hữu: Nguyễn Hữu Trường - Điện thoại: 0348 177 164 (miễn phí) - Email: nguyenhuutruong1103@gmail.com - Bản quyền thuộc về TechZone.</p>
+  <p>MST: 0312732474. Chủ sở hữu: Lê Đình Thiện - Điện thoại: 0973 280 657 (miễn phí) - Email: harrydinhthien@gmail.com - Bản quyền thuộc về TechZone.</p>
 </div>
 
 
 
         <div className="social-sidebar">
-          <a href="https://www.facebook.com/ntruong.1103" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/thieniunguyenn/" target="_blank" rel="noopener noreferrer">
             <img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="Facebook" />
           </a>
           <a href="https://www.youtube.com/channel/UCWG0nL3P3FtL7T0IESgFdaQ" target="_blank" rel="noopener noreferrer">
@@ -650,16 +650,16 @@ class Home extends Component {
           <a href="https://www.tiktok.com/@jaji.z" target="_blank" rel="noopener noreferrer">
             <img src="https://img.icons8.com/?size=50&id=118638&format=png" alt="TikTok" />
           </a>
-          <a href="https://zalo.me/0348177164" target="_blank" rel="noopener noreferrer">
+          <a href="https://zalo.me/0973280657" target="_blank" rel="noopener noreferrer">
             <img src="https://img.icons8.com/?size=48&id=0m71tmRjlxEe&format=png" alt="Zalo" />
           </a>
         </div>
         <div id="contact-widget">
   <div className="contact-option">
-    <a href="https://zalo.me/0348177164" target="_blank" rel="noopener noreferrer">
+    <a href="https://zalo.me/0973280657" target="_blank" rel="noopener noreferrer">
       <img src="https://img.icons8.com/?size=48&id=0m71tmRjlxEe&format=png" alt="Zalo Icon" className="hover-effect"/>
     </a>
-    <a href="https://zalo.me/0348177164" target="_blank" rel="noopener noreferrer" className="text-link">
+    <a href="https://zalo.me/0973280657" target="_blank" rel="noopener noreferrer" className="text-link">
       <div className="text-container">
         <span className="main-text">Chat Zalo</span>
         <span className="sub-text">(8h - 24h)</span>
@@ -668,25 +668,25 @@ class Home extends Component {
   </div>
 
   <div className="contact-option">
-    <a href="tel:0348177164">
+    <a href="tel:0973280657">
       <img src="https://dienthoaigiakho.vn/_next/image?url=%2Ficons%2Fcommon%2Fbtn-call.svg&w=48&q=75" alt="Phone Icon" className="hover-effect" />
     </a>
-    <a href="tel:0348177164" className="text-link">
+    <a href="tel:0973280657" className="text-link">
       <div className="text-container">
         <span className="main-text">Gọi mua hàng</span>
-        <span className="sub-text">0348177164 (8h-24h)</span>
+        <span className="sub-text">0973280657 (8h-24h)</span>
       </div>
     </a>
   </div>
 
   <div className="contact-option">
-    <a href="tel:0348177164">
+    <a href="tel:0973280657">
       <img src="https://dienthoaigiakho.vn/_next/image?url=%2Ficons%2Fcommon%2Ficon-repair.svg&w=48&q=75" alt="Warranty Icon" className="hover-effect" />
     </a>
-    <a href="tel:0348177164" className="text-link">
+    <a href="tel:0973280657" className="text-link">
       <div className="text-container">
         <span className="main-text">Gọi bảo hành</span>
-        <span className="sub-text">0348177164 (8h-21h)</span>
+        <span className="sub-text">0973280657 (8h-21h)</span>
       </div>
     </a>
   </div>
